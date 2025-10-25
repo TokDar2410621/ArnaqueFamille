@@ -114,10 +114,19 @@ function downloadDocument(docType) {
 
   // Simulation de téléchargement
   setTimeout(() => {
-    // Créer le lien de téléchargement vers le PDF
+    // Mapper chaque type de document au bon PDF
+    const pdfFiles = {
+      'registration': 'faux_certificat_enregistrement_simulation.pdf',
+      'license': 'faux_numero_licence_bancaire_simulation.pdf',
+      'team': 'education_fake_communiques_simulation.pdf',
+      'partnership': 'faux_document_license_SIMULATION.pdf',
+      'complete': 'faux_entreprises_simulation.pdf'
+    };
+
+    // Créer le lien de téléchargement vers le PDF correspondant
     const link = document.createElement('a');
-    link.href = 'faux_entreprises_simulation.pdf';
-    link.download = `faux_document_${docType}_SIMULATION.pdf`;
+    link.href = pdfFiles[docType] || 'faux_entreprises_simulation.pdf';
+    link.download = pdfFiles[docType] || 'faux_entreprises_simulation.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
