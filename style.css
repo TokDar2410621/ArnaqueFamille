@@ -763,30 +763,432 @@ body{
   transform: translateY(0);
 }
 
-/* Responsive */
-@media (max-width: 600px){
-  .top{flex-direction:column;align-items:flex-start}
-  .badge-warning{margin-left:0;margin-top:8px}
-  .navigation{flex-wrap:wrap}
-  .dashboard-stats{grid-template-columns:1fr}
-  .portfolio-item{flex-direction:column;align-items:flex-start;gap:12px}
-  .coin-value{text-align:left}
+/* Responsive - Tablette */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .verification-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-buttons {
+    gap: 10px;
+  }
+
+  .document-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .document-download-btn {
+    width: 100%;
+  }
+
+  .signature-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Header */
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 16px;
+  }
+
+  .top h1 {
+    font-size: 1rem;
+  }
+
+  .badge-warning {
+    margin-left: 0;
+    margin-top: 8px;
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Navigation */
+  .navigation {
+    flex-wrap: wrap;
+    padding: 8px 12px;
+    gap: 6px;
+  }
+
+  .navigation a {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    flex: 1 1 auto;
+    text-align: center;
+    min-width: 80px;
+  }
+
+  /* Container */
+  .container {
+    padding: 0 12px;
+    margin: 16px auto;
+  }
+
+  /* Hero section */
+  .hero {
+    padding: 12px;
+  }
+
+  .hero h2 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .pitch {
+    font-size: 0.9rem;
+  }
+
+  .cta-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  /* Educational Banner */
+  .edu-banner {
+    font-size: 0.85rem;
+    padding: 10px 12px;
+  }
+
+  /* Dashboard Stats */
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .stat-card {
+    padding: 16px;
+  }
+
+  .stat-value {
+    font-size: 1.4rem;
+  }
+
+  /* Portfolio */
+  .portfolio-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .coin-value {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .coin-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  /* Chart Section */
+  .chart-card {
+    padding: 10px;
+  }
+
+  .chart-card h3 {
+    font-size: 0.95rem;
+  }
+
+  /* Actions */
+  .action-btn {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  .edu-note {
+    font-size: 0.75rem;
+  }
+
+  /* Transactions */
+  .transaction-item {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .transaction-amount {
+    text-align: left;
+    width: 100%;
+  }
+
+  .filters {
+    gap: 6px;
+  }
+
+  .filter-btn {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    flex: 1 1 auto;
+  }
+
+  /* Documents Page */
+  .document-card {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .document-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+  }
+
+  .document-info h4 {
+    font-size: 0.95rem;
+  }
+
+  .document-desc {
+    font-size: 0.85rem;
+  }
+
+  .document-warning {
+    font-size: 0.8rem;
+  }
+
+  .document-download-btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .verification-card {
+    padding: 16px;
+  }
+
+  .verification-icon {
+    font-size: 2rem;
+  }
+
+  .verification-card h4 {
+    font-size: 1rem;
+  }
+
+  .verification-card p {
+    font-size: 0.85rem;
+  }
+
+  .warning-box {
+    padding: 20px 16px;
+  }
+
+  .warning-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .warning-box p {
+    font-size: 0.9rem;
+  }
+
+  /* Profile Page */
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .profile-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .profile-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .info-grid {
+    gap: 12px;
+  }
+
+  .info-item {
+    padding: 12px;
+  }
+
+  .kyc-item {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  .referral-box {
+    padding: 16px;
+  }
+
+  .code-display {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  .referral-rewards {
+    gap: 12px;
+  }
+
+  .reward-number {
+    font-size: 1.5rem;
+  }
+
+  .setting-btn {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  /* Custom Popups */
+  .custom-popup-overlay {
+    padding: 12px;
+  }
 
   .custom-popup {
-    padding: 24px 16px;
+    padding: 20px 16px;
     max-height: 85vh;
+    overflow-y: auto;
   }
 
   .popup-emoji {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 12px;
   }
 
   .popup-title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+  }
+
+  .popup-content {
+    font-size: 0.9rem;
+  }
+
+  .popup-content p {
+    font-size: 0.9rem !important;
   }
 
   .popup-content ul,
   .popup-content ol {
+    font-size: 0.85rem;
+    margin: 16px auto !important;
+    max-width: 100% !important;
+  }
+
+  .popup-content li {
+    font-size: 0.85rem;
+    padding: 6px;
+    margin-bottom: 8px;
+  }
+
+  .popup-close-btn {
+    font-size: 0.95rem;
+    padding: 12px 16px;
+  }
+
+  /* Footer */
+  .footer {
+    font-size: 0.75rem;
+    padding: 0 12px;
+  }
+
+  /* Howto section */
+  .howto {
+    padding: 12px;
+  }
+
+  .howto h3 {
+    font-size: 1rem;
+  }
+
+  .howto ol {
     font-size: 0.9rem;
+    padding-left: 20px;
+  }
+
+  .howto li {
+    margin-bottom: 8px;
+  }
+
+  /* Educational note box */
+  .edu-note-box {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  .edu-note-box ul {
+    font-size: 0.8rem;
+    margin-left: 16px;
+  }
+
+  /* Pending section */
+  .pending-section h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive - Très petits écrans */
+@media (max-width: 380px) {
+  .top h1 {
+    font-size: 0.9rem;
+  }
+
+  .badge-warning {
+    font-size: 0.65rem;
+  }
+
+  .navigation a {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    min-width: 70px;
+  }
+
+  .stat-value {
+    font-size: 1.2rem;
+  }
+
+  .coin-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+
+  .popup-emoji {
+    font-size: 2rem;
+  }
+
+  .popup-title {
+    font-size: 1.1rem;
+  }
+
+  .document-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
   }
 }
