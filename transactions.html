@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Transactions — Gains Crypto Express (Simulation)</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <h1>Gains Crypto Express</h1>
+    <div class="badge-warning">SIMULATION ÉDUCATIVE — NE PAS PRENDRE AU SÉRIEUX</div>
+  </header>
+
+  <nav class="navigation">
+    <a href="index.html">Accueil</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="transactions.html" class="active">Transactions</a>
+    <a href="documents.html">Documents</a>
+    <a href="profil.html">Profil</a>
+  </nav>
+
+  <main class="container">
+    <div class="edu-banner">
+      ⚠️ SIMULATION : Ces transactions sont FAUSSES. Les arnaques créent de faux historiques pour paraître légitimes.
+    </div>
+
+    <section class="transactions-header">
+      <h2>Historique des Transactions (FICTIF)</h2>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Toutes</button>
+        <button class="filter-btn" data-filter="deposit">Dépôts</button>
+        <button class="filter-btn" data-filter="profit">Gains</button>
+        <button class="filter-btn" data-filter="withdrawal">Retraits</button>
+      </div>
+    </section>
+
+    <section class="transactions-list" id="transactionsList">
+      <!-- Les transactions seront générées par JavaScript -->
+    </section>
+
+    <section class="pending-section">
+      <h3>Retraits en Attente (SIMULATION)</h3>
+      <div class="edu-note-box">
+        💡 <strong>Technique d'arnaque :</strong> Les fausses plateformes montrent des "retraits en attente" qui ne seront jamais traités, ou demandent des "frais supplémentaires" pour débloquer l'argent.
+      </div>
+      <div class="pending-list" id="pendingList">
+        <!-- Les retraits en attente seront générés ici -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>SIMULATION ÉDUCATIVE — Toutes les transactions affichées sont fictives et servent à démontrer les tactiques d'arnaque.</small>
+  </footer>
+
+  <script src="transactions.js"></script>
+</body>
+</html>

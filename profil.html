@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profil — Gains Crypto Express (Simulation)</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <h1>Gains Crypto Express</h1>
+    <div class="badge-warning">SIMULATION ÉDUCATIVE — NE PAS PRENDRE AU SÉRIEUX</div>
+  </header>
+
+  <nav class="navigation">
+    <a href="index.html">Accueil</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="transactions.html">Transactions</a>
+    <a href="documents.html">Documents</a>
+    <a href="profil.html" class="active">Profil</a>
+  </nav>
+
+  <main class="container">
+    <div class="edu-banner">
+      ⚠️ SIMULATION : Cette page montre comment les arnaques collectent vos informations personnelles.
+    </div>
+
+    <section class="profile-section">
+      <div class="profile-header">
+        <div class="profile-avatar">👤</div>
+        <div class="profile-info">
+          <h2 id="userName">Utilisateur Demo</h2>
+          <div class="profile-id">ID: <span id="userId">DEMO-12345</span></div>
+          <div class="profile-badge">Membre VIP 🌟 (FICTIF)</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="account-info">
+      <h3>Informations du Compte</h3>
+      <div class="info-grid">
+        <div class="info-item">
+          <label>Email</label>
+          <div class="info-value" id="userEmail">demo@exemple.com</div>
+        </div>
+        <div class="info-item">
+          <label>Téléphone</label>
+          <div class="info-value" id="userPhone">+33 6 XX XX XX XX</div>
+        </div>
+        <div class="info-item">
+          <label>Date d'inscription</label>
+          <div class="info-value" id="joinDate">01/01/2024</div>
+        </div>
+        <div class="info-item">
+          <label>Statut du compte</label>
+          <div class="info-value status-verified">✓ Vérifié (FICTIF)</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="verification-section">
+      <h3>Vérification KYC (FAUSSE)</h3>
+      <div class="edu-note-box">
+        ⚠️ <strong>Technique d'arnaque :</strong> Les fausses plateformes demandent des documents d'identité (KYC) pour paraître légitimes, puis utilisent ces documents pour usurper votre identité ou faire du chantage.
+      </div>
+      <div class="kyc-status">
+        <div class="kyc-item completed">
+          <span class="kyc-icon">✓</span>
+          <span>Pièce d'identité (NE JAMAIS ENVOYER)</span>
+        </div>
+        <div class="kyc-item completed">
+          <span class="kyc-icon">✓</span>
+          <span>Selfie avec pièce d'identité (DANGER)</span>
+        </div>
+        <div class="kyc-item completed">
+          <span class="kyc-icon">✓</span>
+          <span>Justificatif de domicile (NE JAMAIS ENVOYER)</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="referral-section">
+      <h3>Programme de Parrainage (PIÈGE)</h3>
+      <div class="edu-note-box">
+        💡 <strong>Technique d'arnaque :</strong> Les systèmes de parrainage transforment les victimes en complices involontaires qui recrutent leurs proches.
+      </div>
+      <div class="referral-box">
+        <div class="referral-code">
+          <label>Votre code de parrainage (FICTIF)</label>
+          <div class="code-display">DEMO-REF-12345</div>
+        </div>
+        <div class="referral-rewards">
+          <div class="reward-item">
+            <div class="reward-number">0</div>
+            <div class="reward-label">Amis parrainés</div>
+          </div>
+          <div class="reward-item">
+            <div class="reward-number">0$</div>
+            <div class="reward-label">Bonus de parrainage (FICTIF)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="settings-section">
+      <h3>Paramètres</h3>
+      <div class="settings-list">
+        <button class="setting-btn" id="changePasswordBtn">
+          🔒 Changer le mot de passe
+          <span class="edu-note">Démo : Montre comment les arnaques collectent vos mots de passe</span>
+        </button>
+        <button class="setting-btn" id="add2FABtn">
+          🛡️ Activer 2FA (FAUX)
+          <span class="edu-note">Démo : Fausse sécurité pour inspirer confiance</span>
+        </button>
+        <button class="setting-btn" id="deleteAccountBtn">
+          ❌ Supprimer le compte
+          <span class="edu-note">Démo : Dans les vraies arnaques, cette option ne fonctionne jamais</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>SIMULATION ÉDUCATIVE — Ne partagez JAMAIS vos informations personnelles avec des plateformes non vérifiées.</small>
+  </footer>
+
+  <script src="profil.js"></script>
+</body>
+</html>

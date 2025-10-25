@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard — Gains Crypto Express (Simulation)</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="top">
+    <h1>Gains Crypto Express</h1>
+    <div class="badge-warning">SIMULATION ÉDUCATIVE — NE PAS PRENDRE AU SÉRIEUX</div>
+  </header>
+
+  <nav class="navigation">
+    <a href="index.html">Accueil</a>
+    <a href="dashboard.html" class="active">Dashboard</a>
+    <a href="transactions.html">Transactions</a>
+    <a href="documents.html">Documents</a>
+    <a href="profil.html">Profil</a>
+  </nav>
+
+  <main class="container">
+    <div class="edu-banner">
+      ⚠️ SIMULATION : Les montants affichés sont FAUX. Cette page démontre comment les arnaques créent un faux sentiment de richesse.
+    </div>
+
+    <section class="dashboard-stats">
+      <div class="stat-card">
+        <div class="stat-label">Solde Total (FICTIF)</div>
+        <div class="stat-value" id="totalBalance">0.00$</div>
+        <div class="stat-change positive">+<span id="dailyChange">0</span>% aujourd'hui</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Gains (FICTIFS)</div>
+        <div class="stat-value" id="totalProfit">0.00$</div>
+        <div class="stat-subtext">Depuis 7 jours</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Investissement Initial</div>
+        <div class="stat-value">100.00$</div>
+        <div class="stat-subtext">Montant de départ</div>
+      </div>
+    </section>
+
+    <section class="portfolio-section">
+      <h2>Portefeuille (SIMULATION)</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="coin-info">
+            <div class="coin-icon">₿</div>
+            <div>
+              <div class="coin-name">Bitcoin</div>
+              <div class="coin-amount"><span id="btcAmount">0.0000</span> BTC</div>
+            </div>
+          </div>
+          <div class="coin-value">
+            <div class="coin-usd" id="btcValue">0.00$</div>
+            <div class="coin-change positive">+<span id="btcChange">0</span>%</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="coin-info">
+            <div class="coin-icon">Ξ</div>
+            <div>
+              <div class="coin-name">Ethereum</div>
+              <div class="coin-amount"><span id="ethAmount">0.0000</span> ETH</div>
+            </div>
+          </div>
+          <div class="coin-value">
+            <div class="coin-usd" id="ethValue">0.00$</div>
+            <div class="coin-change positive">+<span id="ethChange">0</span>%</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="coin-info">
+            <div class="coin-icon">◈</div>
+            <div>
+              <div class="coin-name">Altcoin XYZ</div>
+              <div class="coin-amount"><span id="altAmount">0.00</span> ALT</div>
+            </div>
+          </div>
+          <div class="coin-value">
+            <div class="coin-usd" id="altValue">0.00$</div>
+            <div class="coin-change positive">+<span id="altChange">0</span>%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chart-section">
+      <h2>Performance du Portefeuille (DONNÉES FICTIVES)</h2>
+      <div class="chart-container">
+        <canvas id="portfolioChart" height="100"></canvas>
+      </div>
+    </section>
+
+    <section class="actions-section">
+      <h2>Actions Rapides</h2>
+      <div class="action-buttons">
+        <button class="action-btn" id="withdrawBtn">
+          💰 Retirer les gains
+          <span class="edu-note">Démo : Montre comment l'arnaque bloque les retraits</span>
+        </button>
+        <button class="action-btn" id="investMoreBtn">
+          💸 Investir plus
+          <span class="edu-note">Démo : Technique pour soutirer plus d'argent</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>SIMULATION ÉDUCATIVE — Les montants, gains et transactions sont entièrement fictifs. Utilisez ceci pour expliquer les arnaques à votre famille.</small>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

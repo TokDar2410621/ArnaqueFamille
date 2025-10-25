@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gains Crypto Express — Simulation</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Chart.js et JSZip via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+  <header class="top">
+    <h1>Gains Crypto Express</h1>
+    <div class="badge-warning">SIMULATION ÉDUCATIVE — Faites par Darius votre fils</div>
+  </header>
+
+  <nav class="navigation">
+    <a href="index.html" class="active">Accueil</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="transactions.html">Transactions</a>
+    <a href="documents.html">Documents</a>
+    <a href="profil.html">Profil</a>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Promesse : 1 000 00$ en 30 jours 💸</h2>
+      <h2>Promesse :100% de retour sur votre investissement 💸</h2>
+      <p class="pitch">
+        Investis 100$ maintenant et reçois des gains garantis de 10 000% — retour en 7 jours !
+      </p>
+
+      <div class="cta-row">
+        <button id="installBtn" class="btn">Installer l'application</button>
+        <button id="downloadBtn" class="btn secondary">Télécharger l'application (ZIP) si vous envoyez a quelqu'un qui a des competences informatiques</button>
+      </div>
+
+      <p class="disclaimer small">
+        Cette page est une **simulation** pour démontrer les techniques d’arnaque (promesses exagérées, graphiques qui impressionnent).
+        tout cela pour vous montrer que monter un app pareil est facile et que vous devez être prudent.
+        Ne tombez pas dans le piège des vraies arnaques aucune entreprise ne fais des retours garantis sur les investissements en crypto-monnaies et qui plus ai de 100% chaque mois.
+      </p>
+    </section>
+
+    <section class="charts-grid">
+      <div class="chart-card">
+        <h3>Bitcoin (Simulation)</h3>
+        <canvas id="chartBTC" height="120"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Ethereum (Simulation)</h3>
+        <canvas id="chartETH" height="120"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Altcoin XYZ (Simulation)</h3>
+        <canvas id="chartALT" height="120"></canvas>
+      </div>
+    </section>
+
+    <section class="howto">
+      <h3>Comment l’utiliser</h3>
+      <ol>
+        <li>Montre l’app à ta famille et lis la promesse exagérée.</li>
+        <li>Explique le badge rouge : « Simulation éducative ».</li>
+        <li>Montre les graphiques animés — ils servent à impressionner, pas à prouver.</li>
+        <li>Clique sur <strong>Télécharger l'application</strong> pour récupérer le PWA en ZIP (utile pour archivage ou démonstration hors-ligne).</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Fichier créé à des fins éducatives — signale toute arnaque aux autorités compétentes.</small>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    // enregistrement du service worker (si supporté)
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js').catch(e => console.warn('SW error', e));
+    }
+  </script>
+</body>
+</html>
