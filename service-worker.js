@@ -1,17 +1,21 @@
 // simple service worker pour fournir le shell PWA
-const CACHE_NAME = 'demo-pwa-v2';
+const CACHE_NAME = 'demo-pwa-v4';
 const FILES_TO_CACHE = [
   '/',
   '/index.html',
   '/dashboard.html',
   '/transactions.html',
+  '/documents.html',
   '/profil.html',
   '/style.css',
   '/app.js',
   '/dashboard.js',
   '/transactions.js',
+  '/documents.js',
   '/profil.js',
   '/manifest.json',
+  '/icone.png',
+  '/faux_entreprises_simulation.pdf',
 ];
 
 self.addEventListener('install', (evt) => {

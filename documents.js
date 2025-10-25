@@ -116,7 +116,7 @@ function downloadDocument(docType) {
   setTimeout(() => {
     // Créer le lien de téléchargement vers le PDF
     const link = document.createElement('a');
-    link.href = 'faux_entreprise_simulation.pdf';
+    link.href = 'faux_entreprises_simulation.pdf';
     link.download = `faux_document_${docType}_SIMULATION.pdf`;
     document.body.appendChild(link);
     link.click();
